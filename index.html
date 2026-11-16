@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Amr — Business Informatics & Data Analytics | E-Portfolio</title>
+  
+  <!-- Meta Tags for SEO & Social Sharing -->
+  <meta name="description" content="E-Portfolio of Sara Amr, Business Informatics & Data Analytics student at Université Française d'Égypte. Showcasing academic projects, fintech research, and digital strategy.">
+  <meta name="keywords" content="Sara Amr, Business Informatics, Data Analytics, Université Française d'Égypte, Portfolio, Egypt, Fintech, Fawry, Ankh Pass">
+  <meta name="author" content="Sara Amr">
+
+  <!-- Favicon: Pharaonic Ankh Emblem -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/ankh.svg">
+
+  <!-- Google Fonts: Cinzel (Pharaonic Classic Carved Serif) + Plus Jakarta Sans (Clean Modern Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cinzel+Decorative:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pharaoh: {
+              navy: '#0A1124',
+              surface: '#0F1A36',
+              elevated: '#142246',
+              gold: '#D4AF37',
+              goldLight: '#F6E27A',
+              goldDark: '#8C6D23',
+              stone: '#8D99AE',
+              cream: '#FAF7F0'
+            }
+          },
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-[#060A14] text-slate-200 selection:bg-amber-500 selection:text-slate-950">
+
+  <!-- Ambient Pharaonic Hieroglyphic / Geometric Star Field Background -->
+  <div class="bg-pharaoh-pattern"></div>
+  <div class="glow-orb-primary w-96 h-96 bg-amber-500/10 top-0 left-1/4"></div>
+  <div class="glow-orb-primary w-[32rem] h-[32rem] bg-blue-600/10 top-1/3 right-10"></div>
+  <div class="glow-orb-primary w-96 h-96 bg-amber-500/10 bottom-1/4 left-10"></div>
+
+  <!-- ========================================================================
+       NAVIGATION BAR
+       ======================================================================== -->
+  <header id="mainNavbar" class="navbar-custom">
+    <div class="container-custom flex items-center justify-between">
+      <!-- Monogram / Brand Logo -->
+      <a href="#hero" class="flex items-center gap-3 group text-decoration-none">
+        <div class="relative w-10 h-10 rounded-full border border-amber-500/50 flex items-center justify-center bg-slate-950/80 shadow-[0_0_15px_rgba(212,175,55,0.25)] group-hover:border-amber-400 transition-colors">
+          <img src="assets/icons/ankh.svg" alt="Ankh Emblem" class="w-5 h-5 object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg tracking-wider text-amber-100 group-hover:text-amber-300 transition-colors">
+            SARA AMR
+          </span>
+          <span class="text-[10px] tracking-widest text-amber-400/80 uppercase font-sans font-medium">
+            UFE • Data Analytics
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="resume.html" target="_blank" class="nav-link text-amber-300 font-semibold flex items-center gap-1">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>CV</span>
+        </a>
+      </nav>
+
+      <!-- CTA Button & Mobile Menu Toggle -->
+      <div class="flex items-center gap-3">
+        <a href="#contact" class="hidden sm:inline-flex btn-gold text-xs py-2.5 px-5">
+          <span>Get in Touch</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg bg-slate-900 border border-amber-500/30 text-amber-200 hover:text-amber-400 focus:outline-none" aria-label="Toggle navigation">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer">
+    <button id="closeMobileMenu" class="absolute top-6 right-6 p-2 rounded-full bg-slate-900 border border-amber-500/30 text-amber-200" aria-label="Close menu">
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+    <a href="#hero" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About Me</a>
+    <a href="#education" class="mobile-nav-link">Education</a>
+    <a href="#skills" class="mobile-nav-link">Core Skills</a>
+    <a href="#projects" class="mobile-nav-link">Projects Showcase</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#certificates" class="mobile-nav-link">Certificates</a>
+    <a href="#references" class="mobile-nav-link">Academic References</a>
+    <a href="#contact" class="mobile-nav-link text-amber-400">Contact Sara</a>
+  </div>
+
+  <main>
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section id="hero" class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Introduction & Titles -->
+          <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+            
+            <!-- Pharaonic Royal Pill Tag -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+              <img src="assets/icons/eye-of-horus.svg" alt="Eye of Horus" class="w-4 h-4 object-contain">
+              <span class="text-xs uppercase tracking-widest font-serif font-bold text-amber-300">
+                Université Française d’Égypte
+              </span>
+            </div>
+
+            <!-- Main Title & Name -->
+            <div class="space-y-2">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                <span class="block text-slate-100">Welcome, I'm</span>
+                <span class="gold-gradient-text tracking-wide font-black">Sara Amr</span>
+              </h1>
+              <p class="text-lg sm:text-xl font-serif text-amber-200/90 font-medium">
+                Business Informatics & Data Analytics Student
+              </p>
+            </div>
+
+            <!-- Welcome Statement -->
+            <p class="text-base sm:text-lg text-slate-300 font-sans leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Presenting my official e-portfolio of academic projects, data-driven research, fintech case studies, and professional development. Bridging modern technical analytics with strategic business vision.
+            </p>
+
+            <!-- Focus Pillars / Badges -->
+            <div class="flex flex-wrap justify-center lg:justify-start gap-2.5 pt-1">
+              <span class="btn-tag">
+                <i data-lucide="bar-chart-3" class="w-3.5 h-3.5 text-amber-400"></i>
+                Data Analytics
+              </span>
+              <span class="btn-tag">
+                <i data-lucide="briefcase" class="w-3.5 h-3.5 text-amber-400"></i>
+                Business Strategy
+              </span>
+              <span class="btn-tag">
+                <i data-lucide="globe" class="w-3.5 h-3.5 text-amber-400"></i>
+                French-Egyptian Academic Excellence
+              </span>
+              <span class="btn-tag">
+                <i data-lucide="users" class="w-3.5 h-3.5 text-amber-400"></i>
+                Team Leadership
+              </span>
+            </div>
+
+            <!-- CTA Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+              <a href="#projects" class="btn-gold">
+                <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+                <span>View Projects</span>
+              </a>
+              <a href="#contact" class="btn-outline-gold">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                <span>Get in Touch</span>
+              </a>
+              <a href="#experience" class="px-5 py-3 rounded-full text-xs font-semibold tracking-wider uppercase text-slate-300 hover:text-amber-300 transition-colors flex items-center gap-2">
+                <span>View Timeline</span>
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Portrait Frame with Pharaonic Motifs -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="hero-headshot-wrapper">
+              <!-- Animated Glowing Halo -->
+              <div class="hero-headshot-glow"></div>
+
+              <!-- Main Frame -->
+              <div class="hero-headshot-frame">
+                <img src="assets/images/headshot.jpg" alt="Sara Amr — Professional Portrait" class="hero-headshot-img" id="heroProfileImage">
+              </div>
+
+              <!-- Floating Badge 1: Top Left - Eye of Horus Wisdom -->
+              <div class="hero-floating-badge -top-4 -left-4 sm:-left-8">
+                <div class="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center border border-amber-500/30">
+                  <img src="assets/icons/eye-of-horus.svg" alt="Insight" class="w-5 h-5 object-contain">
+                </div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 uppercase font-serif tracking-wider">Analytical Insight</div>
+                  <div class="text-xs font-bold text-amber-200">Data & Vision</div>
+                </div>
+              </div>
+
+              <!-- Floating Badge 2: Bottom Right - UFE Academic Foundation -->
+              <div class="hero-floating-badge -bottom-4 -right-4 sm:-right-6" style="animation-delay: -3s;">
+                <div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/30">
+                  <i data-lucide="graduation-cap" class="w-4 h-4 text-amber-300"></i>
+                </div>
+                <div class="text-left">
+                  <div class="text-[10px] text-slate-400 uppercase font-serif tracking-wider">Education</div>
+                  <div class="text-xs font-bold text-amber-200">UFE 2025–Present</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider">
+      <div class="line"></div>
+      <div class="emblem">
+        <img src="assets/icons/lotus.svg" alt="Lotus Motif" class="w-6 h-6 object-contain opacity-80">
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- ========================================================================
+         ABOUT ME & BACKGROUND SECTION
+         ======================================================================== -->
+    <section id="about" class="section-spacing">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            About Me & Professional Identity
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Passionate About Technology, Strategy & Impact
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Combining analytical rigor with business acumen to solve complex organizational challenges and craft human-centric solutions.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Bio & Story Card (7 Cols) -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="pharaoh-card p-8">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30 text-amber-400">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-amber-100 font-serif">Biography & Core Philosophy</h3>
+                  <span class="text-xs text-amber-400/80 uppercase tracking-wider font-sans">Business Informatics • UFE</span>
+                </div>
+              </div>
+
+              <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+                <p>
+                  I am a motivated <strong class="text-amber-200">Business Informatics and Data Analytics</strong> student at <strong class="text-amber-200">Université Française d’Égypte (UFE)</strong>, where I immerse myself at the intersection of business strategy, computational systems, and demographic intelligence.
+                </p>
+                <p>
+                  My academic journey has fostered a deep curiosity for solving practical problems through structured data analysis, market research, and agile cross-functional collaboration. Whether deconstructing the unit economics of fintech pioneers like Fawry, evaluating the historical economic vitality of the Suez Canal, or conceptualizing community platforms like the Skill Up App, I strive to combine analytical precision with empathetic leadership.
+                </p>
+                <p>
+                  Outside the lecture hall and research labs, I am deeply committed to <strong class="text-amber-200">sports, community leadership, and event management</strong>. I believe that athletic discipline and teamwork mirror the dedication required to deliver high-stakes academic and business initiatives.
+                </p>
+              </div>
+
+              <!-- Quick Highlights Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-6 border-t border-amber-500/20 text-center">
+                <div class="p-3 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <div class="text-2xl font-bold font-serif text-amber-300">6+</div>
+                  <div class="text-[11px] text-slate-400 uppercase tracking-wider font-sans mt-1">Key Projects</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <div class="text-2xl font-bold font-serif text-amber-300">3</div>
+                  <div class="text-[11px] text-slate-400 uppercase tracking-wider font-sans mt-1">Institutions</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <div class="text-2xl font-bold font-serif text-amber-300">2 yrs</div>
+                  <div class="text-[11px] text-slate-400 uppercase tracking-wider font-sans mt-1">Event Leadership</div>
+                </div>
+                <div class="p-3 rounded-lg bg-slate-900/50 border border-slate-800">
+                  <div class="text-2xl font-bold font-serif text-amber-300">100%</div>
+                  <div class="text-[11px] text-slate-400 uppercase tracking-wider font-sans mt-1">Dedication</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interests & Pillars Card (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="pharaoh-card p-6 sm:p-8">
+              <h3 class="text-lg font-bold text-amber-100 font-serif mb-4 flex items-center gap-2">
+                <i data-lucide="compass" class="w-5 h-5 text-amber-400"></i>
+                <span>What Drives Me</span>
+              </h3>
+
+              <div class="space-y-4">
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-amber-500/20 flex gap-4">
+                  <div class="w-9 h-9 rounded-lg bg-amber-500/10 flex-shrink-0 flex items-center justify-center text-amber-400">
+                    <i data-lucide="database" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-amber-200">Data Analytics & Insights</h4>
+                    <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                      Transforming raw data into clear, actionable business strategies and economic intelligence.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-amber-500/20 flex gap-4">
+                  <div class="w-9 h-9 rounded-lg bg-blue-500/10 flex-shrink-0 flex items-center justify-center text-blue-400">
+                    <i data-lucide="trending-up" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-amber-200">Business Strategy & Fintech</h4>
+                    <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                      Studying scalable digital ecosystems, financial inclusion, and modern market dynamics in Egypt.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-slate-900/60 border border-amber-500/20 flex gap-4">
+                  <div class="w-9 h-9 rounded-lg bg-emerald-500/10 flex-shrink-0 flex items-center justify-center text-emerald-400">
+                    <i data-lucide="trophy" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-amber-200">Sports & Team Athletics</h4>
+                    <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                      Cultivating endurance, strategic discipline, and seamless teamwork on and off the field.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Egyptian Heritage Quote -->
+              <div class="mt-6 p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-center relative overflow-hidden">
+                <img src="assets/icons/ankh.svg" alt="" class="absolute -right-4 -bottom-4 w-20 h-20 opacity-5 pointer-events-none">
+                <p class="text-xs italic text-amber-200/90 font-serif">
+                  "Knowledge is like a garden: if it is not cultivated, it cannot be harvested."
+                </p>
+                <span class="text-[10px] text-slate-400 uppercase tracking-widest mt-1 block font-sans">
+                  — Ancient Egyptian Proverb
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         EDUCATION TIMELINE SECTION
+         ======================================================================== -->
+    <section id="education" class="section-spacing bg-slate-950/40">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Academic Pathway
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Education Timeline
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            A continuous progression of academic rigor, bilingual immersion, and specialized technical mastery.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="timeline-container">
+            
+            <!-- Education 1: Université Française d'Égypte -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="pharaoh-card p-6 sm:p-7">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500 text-slate-950">
+                    2025 – Present • Current
+                  </span>
+                  <span class="text-xs text-amber-400/90 font-serif font-semibold">Undergraduate Degree</span>
+                </div>
+                <h3 class="text-xl font-bold text-amber-100 font-serif">
+                  Université Française d'Égypte (UFE)
+                </h3>
+                <h4 class="text-sm font-semibold text-amber-300 mt-1 mb-3">
+                  Bachelor in Business Informatics & Data Analytics
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                  Enrolled in the prestigious bilingual French-Egyptian program focusing on business intelligence, software systems, data warehousing, and organizational modeling. Collaborating closely with esteemed faculty mentors on real-world case studies and market analyses.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Business Informatics</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Data Analytics</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Bilingual Curriculum</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Decision Science</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education 2: Utopia School (American Diploma) -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="pharaoh-card p-6 sm:p-7">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-amber-300 border border-amber-500/30">
+                    2023 – 2025
+                  </span>
+                  <span class="text-xs text-slate-400 font-serif font-semibold">High School Diploma</span>
+                </div>
+                <h3 class="text-xl font-bold text-amber-100 font-serif">
+                  Utopia School
+                </h3>
+                <h4 class="text-sm font-semibold text-amber-300 mt-1 mb-3">
+                  American High School Diploma
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                  Graduated with honors under the American curriculum. Excelled in advanced mathematics, social sciences, and research methodologies. Spearheaded student council initiatives, event coordination, and inter-school academic competitions.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">American Diploma Honors</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Graduation Committee Leader</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Public Presentation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education 3: Retaj Language School -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="pharaoh-card p-6 sm:p-7">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-amber-300 border border-amber-500/30">
+                    2018 – 2023
+                  </span>
+                  <span class="text-xs text-slate-400 font-serif font-semibold">Secondary & Preparatory</span>
+                </div>
+                <h3 class="text-xl font-bold text-amber-100 font-serif">
+                  Retaj Language School
+                </h3>
+                <h4 class="text-sm font-semibold text-amber-300 mt-1 mb-3">
+                  Language & Academic Foundations
+                </h4>
+                <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                  Built a robust foundation in trilingual proficiency (English, Arabic, French), scientific analysis, and extracurricular leadership. Recognized repeatedly on the school honor roll and active participant in annual Spelling Bee and science exhibitions.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Honor Roll Ranking</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">Spelling Bee Recognition</span>
+                  <span class="px-2.5 py-1 text-xs rounded-md bg-slate-900 border border-slate-700 text-slate-300">School Appreciation Award</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CORE SKILLS SECTION
+         ======================================================================== -->
+    <section id="skills" class="section-spacing">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Competency Matrix
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Core Skills & Capabilities
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            A balanced synthesis of analytical capabilities, organizational agility, and market-facing communication.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Category 1: Analytics & Tech -->
+          <div class="pharaoh-card p-6 space-y-5">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30 text-amber-400">
+                <i data-lucide="line-chart" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-amber-100 font-serif">Data & Tech Analytics</h3>
+                <span class="text-xs text-slate-400 font-sans">Technical Competencies</span>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Data Analytics & Interpretation</span>
+                  <span class="text-amber-300">Advanced</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Business Informatics</span>
+                  <span class="text-amber-300">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Quantitative Research & Statistics</span>
+                  <span class="text-amber-300">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">IT Infrastructure & Enterprise Systems</span>
+                  <span class="text-amber-300">Solid (Petrobel)</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Management & Strategy -->
+          <div class="pharaoh-card p-6 space-y-5">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center border border-blue-500/30 text-blue-400">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-amber-100 font-serif">Management & Strategy</h3>
+                <span class="text-xs text-slate-400 font-sans">Execution & Leadership</span>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Time Management & Prioritization</span>
+                  <span class="text-amber-300">Exceptional</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Team Collaboration & Coordination</span>
+                  <span class="text-amber-300">Exceptional</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Event Organization & Ushering</span>
+                  <span class="text-amber-300">2+ Years Active</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Organizational Behavior Structuring</span>
+                  <span class="text-amber-300">Academic Honors</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Marketing & Outreach -->
+          <div class="pharaoh-card p-6 space-y-5">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/30 text-emerald-400">
+                <i data-lucide="megaphone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h3 class="text-base font-bold text-amber-100 font-serif">Marketing & Growth</h3>
+                <span class="text-xs text-slate-400 font-sans">E-Commerce & Digital</span>
+              </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Digital Marketing & Social Media</span>
+                  <span class="text-amber-300">Proven (Glamisky)</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Customer Communication & Sales Funnels</span>
+                  <span class="text-amber-300">High Proficiency</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Platform & Product Strategy</span>
+                  <span class="text-amber-300">Proficient</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+
+              <div>
+                <div class="flex justify-between text-xs font-medium mb-1">
+                  <span class="text-slate-200">Bilingual Public Presentation</span>
+                  <span class="text-amber-300">English / French</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider">
+      <div class="line"></div>
+      <div class="emblem">
+        <img src="assets/icons/ankh.svg" alt="Ankh Motif" class="w-6 h-6 object-contain opacity-80">
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- ========================================================================
+         PROJECTS / WORK SAMPLES SHOWCASE SECTION
+         ======================================================================== -->
+    <section id="projects" class="section-spacing bg-slate-950/40">
+      <div class="container-custom">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Portfolio Showcase
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Academic & Applied Projects
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Click any project to explore the comprehensive case study, methodology, problem-solving framework, and outcomes.
+          </p>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+            <button class="btn-tag active" data-filter="all">
+              <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+              All Projects (6)
+            </button>
+            <button class="btn-tag" data-filter="platforms">
+              <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+              Platforms & UX (3)
+            </button>
+            <button class="btn-tag" data-filter="fintech">
+              <i data-lucide="dollar-sign" class="w-3.5 h-3.5"></i>
+              Fintech & Research (2)
+            </button>
+            <button class="btn-tag" data-filter="strategy">
+              <i data-lucide="git-merge" class="w-3.5 h-3.5"></i>
+              Data & Strategy (1)
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Projects Grid (Populated via JS) -->
+        <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Cards are injected dynamically by js/main.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         PROFESSIONAL EXPERIENCE SECTION
+         ======================================================================== -->
+    <section id="experience" class="section-spacing">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Professional Track Record
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Work Experience & Leadership
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Hands-on exposure to corporate enterprise workflows, digital retail management, and university-level event hosting.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Experience 1: Petrobel Corporate IT Internship -->
+          <div class="pharaoh-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-semibold uppercase tracking-wider">
+                  Corporate Internship
+                </span>
+                <span class="text-amber-400/90 font-serif font-medium">Enterprise Sector</span>
+              </div>
+
+              <div class="w-12 h-12 rounded-xl bg-blue-900/30 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
+                <i data-lucide="server" class="w-6 h-6"></i>
+              </div>
+
+              <h3 class="text-xl font-bold text-amber-100 font-serif mb-1">
+                Petrobel IT Internship
+              </h3>
+              <h4 class="text-xs font-semibold text-amber-300 uppercase tracking-wider mb-4">
+                Belayim Petroleum Company • IT Department
+              </h4>
+
+              <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                Completed an intensive corporate technology internship within one of Egypt's most prominent joint-venture energy corporations. Gained firsthand exposure to enterprise workflows, network operations, database administration, and corporate cybersecurity best practices.
+              </p>
+
+              <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Observed enterprise ERP workflows and infrastructure maintenance.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Studied internal helpdesk ticket resolution and data security protocols.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Earned formal corporate completion certification.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>Duration: Two-Week Sprint</span>
+              <span class="text-amber-400 font-medium">Certified</span>
+            </div>
+          </div>
+
+          <!-- Experience 2: Online Sales - Glamisky Jewelry & More -->
+          <div class="pharaoh-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 font-semibold uppercase tracking-wider">
+                  E-Commerce & Sales
+                </span>
+                <span class="text-amber-400/90 font-serif font-medium">Digital Retail</span>
+              </div>
+
+              <div class="w-12 h-12 rounded-xl bg-amber-900/30 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4">
+                <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+              </div>
+
+              <h3 class="text-xl font-bold text-amber-100 font-serif mb-1">
+                Online Sales Specialist
+              </h3>
+              <h4 class="text-xs font-semibold text-amber-300 uppercase tracking-wider mb-4">
+                Glamisky Jewelry & More
+              </h4>
+
+              <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                Spearheaded social media commercial engagement and digital sales execution across Instagram, Facebook, and TikTok. Managed end-to-end customer relationships from initial inquiry to final order fulfillment.
+              </p>
+
+              <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Managed multi-channel promotions across Instagram, Facebook & TikTok.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Conducted direct customer communication, resolving queries and driving conversions.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Maintained accurate order placement logs and customer retention tracking.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>Channel: Social E-Commerce</span>
+              <span class="text-amber-400 font-medium">Growth Impact</span>
+            </div>
+          </div>
+
+          <!-- Experience 3: Event Organization & Ushering -->
+          <div class="pharaoh-card p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold uppercase tracking-wider">
+                  Leadership & Ushering
+                </span>
+                <span class="text-amber-400/90 font-serif font-medium">Public Protocol</span>
+              </div>
+
+              <div class="w-12 h-12 rounded-xl bg-emerald-900/30 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
+                <i data-lucide="award" class="w-6 h-6"></i>
+              </div>
+
+              <h3 class="text-xl font-bold text-amber-100 font-serif mb-1">
+                Event Organization & Ushering
+              </h3>
+              <h4 class="text-xs font-semibold text-amber-300 uppercase tracking-wider mb-4">
+                High School Graduations & University Events
+              </h4>
+
+              <p class="text-sm text-slate-300 leading-relaxed font-sans mb-4">
+                Demonstrated high-pressure logistical coordination and hospitality leadership. Organized high school graduation ceremonies for two consecutive years and served as an official usher representing the student body during university events.
+              </p>
+
+              <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Coordinated venue logistics, guest staging, and stage management for 2 years.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Served as university usher welcoming dignitaries and prospective students.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>Honed calm conflict resolution and public crowd guidance under live deadlines.</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>Tenure: 2 Consecutive Years</span>
+              <span class="text-amber-400 font-medium">Commended</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CERTIFICATES & ACHIEVEMENTS SECTION
+         ======================================================================== -->
+    <section id="certificates" class="section-spacing bg-slate-950/40">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Honors & Credentials
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Certificates & Achievements
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Verified acknowledgments of academic excellence, corporate internship completion, and extracurricular distinction.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Cert 1: Petrobel -->
+          <div class="pharaoh-card p-6 text-center space-y-4">
+            <div class="w-14 h-14 rounded-full mx-auto bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <i data-lucide="shield-check" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-[11px] uppercase font-serif tracking-wider text-amber-400 block mb-1">Corporate Credential</span>
+              <h3 class="text-base font-bold text-amber-100 font-serif">Petrobel Internship Certificate</h3>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-sans">
+              Official certificate awarded upon successful completion of the corporate IT department practicum at Belayim Petroleum Co.
+            </p>
+            <div class="pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+              Issuing Body: Petrobel IT Dept
+            </div>
+          </div>
+
+          <!-- Cert 2: Academic Excellence -->
+          <div class="pharaoh-card p-6 text-center space-y-4">
+            <div class="w-14 h-14 rounded-full mx-auto bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <i data-lucide="medal" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-[11px] uppercase font-serif tracking-wider text-amber-400 block mb-1">Academic Honors</span>
+              <h3 class="text-base font-bold text-amber-100 font-serif">Class Ranking & High Scores</h3>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-sans">
+              Consistent top-tier academic ranking and high GPA records at Al Retaj Language School and Utopia School.
+            </p>
+            <div class="pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+              Recognition: Honor Roll Standing
+            </div>
+          </div>
+
+          <!-- Cert 3: Spelling Bee -->
+          <div class="pharaoh-card p-6 text-center space-y-4">
+            <div class="w-14 h-14 rounded-full mx-auto bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <i data-lucide="trophy" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-[11px] uppercase font-serif tracking-wider text-amber-400 block mb-1">Language Competition</span>
+              <h3 class="text-base font-bold text-amber-100 font-serif">Spelling Bee Participation</h3>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-sans">
+              Commended participation and stage delivery in competitive inter-school Spelling Bee championships.
+            </p>
+            <div class="pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+              Competency: English Mastery
+            </div>
+          </div>
+
+          <!-- Cert 4: School Appreciation -->
+          <div class="pharaoh-card p-6 text-center space-y-4">
+            <div class="w-14 h-14 rounded-full mx-auto bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+              <i data-lucide="star" class="w-7 h-7"></i>
+            </div>
+            <div>
+              <span class="text-[11px] uppercase font-serif tracking-wider text-amber-400 block mb-1">Leadership Award</span>
+              <h3 class="text-base font-bold text-amber-100 font-serif">School Appreciation Certificate</h3>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed font-sans">
+              Award of gratitude for leadership in student activities, graduation ceremony planning, and community spirit.
+            </p>
+            <div class="pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+              Awarded By: Administration
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ACADEMIC REFERENCES SECTION
+         ======================================================================== -->
+    <section id="references" class="section-spacing">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Faculty Endorsements
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Academic References
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Faculty leadership and professorial advisors overseeing academic performance at Université Française d’Égypte.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          
+          <!-- Reference 1: Dr. Mariam Gawich -->
+          <div class="pharaoh-card p-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 flex-shrink-0">
+                <i data-lucide="user-check" class="w-6 h-6"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="text-xl font-bold text-amber-100 font-serif">Dr. Mariam Gawich</h3>
+                <h4 class="text-xs font-semibold text-amber-300 uppercase tracking-wider">
+                  Department Director
+                </h4>
+                <p class="text-xs text-slate-400 font-sans">
+                  Université Française d’Égypte (UFE)
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-800/80 text-sm text-slate-300 leading-relaxed font-sans italic">
+              "Sara exhibits an admirable dedication to her academic curriculum, consistently displaying keen analytical curiosity, structured inquiry, and collaborative engagement within the department."
+            </div>
+
+            <div class="mt-4 flex items-center gap-2 text-xs text-amber-400/90 font-medium">
+              <i data-lucide="badge-check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Official Department Director Reference</span>
+            </div>
+          </div>
+
+          <!-- Reference 2: Dr. Osama Hanafy -->
+          <div class="pharaoh-card p-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 flex-shrink-0">
+                <i data-lucide="book-open" class="w-6 h-6"></i>
+              </div>
+              <div class="space-y-1">
+                <h3 class="text-xl font-bold text-amber-100 font-serif">Dr. Osama Hanafy</h3>
+                <h4 class="text-xs font-semibold text-amber-300 uppercase tracking-wider">
+                  Professor
+                </h4>
+                <p class="text-xs text-slate-400 font-sans">
+                  Université Française d’Égypte (UFE)
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-slate-800/80 text-sm text-slate-300 leading-relaxed font-sans italic">
+              "Demonstrating strong problem-solving capabilities, Sara regularly bridges theoretical coursework with concrete business analytics, showing high promise for future research and corporate leadership."
+            </div>
+
+            <div class="mt-4 flex items-center gap-2 text-xs text-amber-400/90 font-medium">
+              <i data-lucide="badge-check" class="w-4 h-4 text-emerald-400"></i>
+              <span>Official Professorial Reference</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="section-divider">
+      <div class="line"></div>
+      <div class="emblem">
+        <img src="assets/icons/eye-of-horus.svg" alt="Eye of Horus" class="w-6 h-6 object-contain opacity-80">
+      </div>
+      <div class="line"></div>
+    </div>
+
+    <!-- ========================================================================
+         CONTACT & INQUIRY SECTION
+         ======================================================================== -->
+    <section id="contact" class="section-spacing bg-slate-950/60">
+      <div class="container-custom">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-xs uppercase font-serif font-bold tracking-widest text-amber-400">
+            Let's Collaborate
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-4 gold-gradient-text-subtle">
+            Get in Touch
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Open for summer internships, academic research initiatives, data analytics projects, and student collaborations.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+          
+          <!-- Contact Info Column (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="pharaoh-card p-8 space-y-6">
+              
+              <h3 class="text-xl font-bold text-amber-100 font-serif">
+                Direct Contact Details
+              </h3>
+
+              <!-- Email Item with Copy Button -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30 text-amber-400 flex-shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <span class="text-xs text-slate-400 uppercase tracking-wider font-serif block">Email Address</span>
+                  <a href="mailto:saraamrmahmoud@gmail.com" class="text-sm font-semibold text-amber-200 hover:text-amber-400 transition-colors truncate block">
+                    saraamrmahmoud@gmail.com
+                  </a>
+                  <button id="copyEmailBtn" class="mt-1 text-[11px] text-amber-300/80 hover:text-amber-200 flex items-center gap-1 font-sans">
+                    <i data-lucide="copy" class="w-3 h-3"></i>
+                    <span>Copy to clipboard</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Phone Item -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30 text-amber-400 flex-shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider font-serif block">Phone / WhatsApp</span>
+                  <a href="tel:+201187563781" class="text-sm font-semibold text-amber-200 hover:text-amber-400 transition-colors">
+                    +20 1187563781
+                  </a>
+                  <div class="text-[11px] text-slate-400 mt-0.5">Cairo, Egypt (GMT+2)</div>
+                </div>
+              </div>
+
+              <!-- Location Item -->
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center border border-amber-500/30 text-amber-400 flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider font-serif block">Location & Campus</span>
+                  <div class="text-sm font-semibold text-slate-200">
+                    Université Française d’Égypte
+                  </div>
+                  <div class="text-[11px] text-slate-400 mt-0.5">Cairo, Egypt</div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="pt-6 border-t border-slate-800">
+                <span class="text-xs text-slate-400 uppercase tracking-wider font-serif block mb-3">Professional Profiles</span>
+                <div class="flex items-center gap-3">
+                  <!-- LinkedIn -->
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-amber-500/30 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-all" aria-label="Sara Amr LinkedIn">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                  </a>
+                  <!-- Instagram -->
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-amber-500/30 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-all" aria-label="Sara Amr Instagram">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                  </a>
+                  <!-- Facebook -->
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-amber-500/30 flex items-center justify-center text-slate-300 hover:text-amber-300 hover:border-amber-400 transition-all" aria-label="Sara Amr Facebook">
+                    <i data-lucide="facebook" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form Column (7 Cols) -->
+          <div class="lg:col-span-7">
+            <div class="pharaoh-card p-8">
+              <h3 class="text-xl font-bold text-amber-100 font-serif mb-2">
+                Send a Message
+              </h3>
+              <p class="text-xs text-slate-300 mb-6">
+                Recruiters, faculty members, and collaborators are invited to submit their message directly below.
+              </p>
+
+              <form id="contactForm" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-amber-200 uppercase tracking-wider font-serif mb-1.5">
+                      Your Name *
+                    </label>
+                    <input type="text" name="name" required placeholder="e.g. Dr. Ahmed Hassan" class="form-input-custom">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-amber-200 uppercase tracking-wider font-serif mb-1.5">
+                      Your Email *
+                    </label>
+                    <input type="email" name="email" required placeholder="name@organization.com" class="form-input-custom">
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-amber-200 uppercase tracking-wider font-serif mb-1.5">
+                    Subject / Topic
+                  </label>
+                  <input type="text" name="subject" placeholder="e.g. Internship Opportunity / Collaboration" class="form-input-custom">
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-amber-200 uppercase tracking-wider font-serif mb-1.5">
+                    Message *
+                  </label>
+                  <textarea name="message" rows="5" required placeholder="Write your message here..." class="form-input-custom resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="btn-gold w-full mt-2">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Transmit Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER SECTION
+       ======================================================================== -->
+  <footer class="pt-16 pb-12 bg-[#04070F] border-t border-amber-900/30 relative">
+    <div class="container-custom text-center space-y-6">
+      
+      <!-- Pharaonic Lotus Emblem -->
+      <div class="w-12 h-12 mx-auto rounded-full bg-slate-900 border border-amber-500/40 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.25)]">
+        <img src="assets/icons/lotus.svg" alt="Lotus" class="w-7 h-7 object-contain">
+      </div>
+
+      <!-- Footer Brand Title -->
+      <div>
+        <h4 class="text-xl font-bold font-serif text-amber-100 tracking-wider">SARA AMR</h4>
+        <p class="text-xs text-amber-400/80 font-sans tracking-widest uppercase mt-1">
+          Business Informatics & Data Analytics • Université Française d’Égypte
+        </p>
+      </div>
+
+      <!-- Quick Footer Nav -->
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400 font-sans">
+        <a href="#about" class="hover:text-amber-300 transition-colors">About</a>
+        <a href="#education" class="hover:text-amber-300 transition-colors">Education</a>
+        <a href="#skills" class="hover:text-amber-300 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-amber-300 transition-colors">Projects</a>
+        <a href="#experience" class="hover:text-amber-300 transition-colors">Experience</a>
+        <a href="#certificates" class="hover:text-amber-300 transition-colors">Certificates</a>
+        <a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a>
+      </div>
+
+      <!-- Divider line -->
+      <div class="w-32 h-[1px] bg-gradient-to-r from-transparent via-amber-500/50 to-transparent mx-auto"></div>
+
+      <!-- Copyright & Cultural Legacy Note -->
+      <div class="space-y-1 text-xs text-slate-500 font-sans">
+        <p>© 2026 Sara Amr. All Rights Reserved.</p>
+        <p class="text-[11px] text-slate-600">
+          Designed with an Egyptian heritage aesthetic & modern minimalism.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROJECT CASE STUDY MODAL DIALOG
+       ======================================================================== -->
+  <div id="projectModal" class="modal-backdrop">
+    <div class="modal-content-box">
+      <!-- Close Button -->
+      <button id="closeModalBtn" class="modal-close-btn" aria-label="Close modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <!-- Dynamic Content Populated via JS -->
+      <div id="modalContentBody">
+        <!-- Content will be injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top">
+    <i data-lucide="chevron-up" class="w-5 h-5"></i>
+  </button>
+
+  <!-- SCRIPTS -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

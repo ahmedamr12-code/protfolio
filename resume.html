@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Amr — Curriculum Vitae | Business Informatics & Data Analytics</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/ankh.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @media print {
+      body {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-shadow-none {
+        box-shadow: none !important;
+        border: 1px solid #e5e7eb !important;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-['Plus_Jakarta_Sans'] min-h-screen py-10 px-4 sm:px-6">
+
+  <!-- Floating Control Bar (No Print) -->
+  <div class="no-print max-w-4xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 bg-slate-900/90 border border-amber-500/30 p-4 rounded-xl shadow-lg backdrop-blur-md">
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-300 hover:text-amber-200 transition-colors">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      <span>Back to Portfolio</span>
+    </a>
+    <div class="flex items-center gap-3">
+      <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-500 text-slate-950 font-bold text-xs uppercase tracking-wider hover:bg-amber-400 transition-all shadow-[0_0_15px_rgba(212,175,55,0.35)]">
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        <span>Print / Save as PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main CV Container -->
+  <div class="max-w-4xl mx-auto bg-slate-900 border border-amber-500/20 rounded-2xl shadow-2xl overflow-hidden print-shadow-none print:bg-white print:text-slate-900">
+    
+    <!-- Header Banner -->
+    <div class="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 border-b border-amber-500/30 print:bg-none print:border-b-2 print:border-slate-800">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 text-center sm:text-left">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+          <img src="assets/images/headshot.jpg" alt="Sara Amr" class="w-24 h-24 rounded-full object-cover border-2 border-amber-500/50 shadow-md object-[center_20%] print:w-20 print:h-20 print:border-slate-400 flex-shrink-0">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-[11px] font-['Cinzel'] font-bold text-amber-300 uppercase tracking-widest mb-2 print:border-slate-300 print:text-slate-700">
+              Official Academic & Professional CV
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold font-['Cinzel'] tracking-wider text-amber-100 print:text-slate-900">
+              SARA AMR
+            </h1>
+            <p class="text-base font-medium text-amber-300 print:text-slate-700 mt-1">
+              Business Informatics & Data Analytics Student
+            </p>
+            <p class="text-xs text-slate-400 print:text-slate-600 mt-1">
+              Université Française d’Égypte (UFE) • Bilingual French-Egyptian Curriculum
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="text-xs space-y-1.5 text-slate-300 print:text-slate-700 sm:text-right border-t sm:border-t-0 sm:border-l border-slate-800 print:border-slate-300 pt-4 sm:pt-0 sm:pl-6">
+          <div class="flex items-center sm:justify-end gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-400 print:text-slate-700"></i>
+            <a href="mailto:saraamrmahmoud@gmail.com" class="hover:underline">saraamrmahmoud@gmail.com</a>
+          </div>
+          <div class="flex items-center sm:justify-end gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400 print:text-slate-700"></i>
+            <span>+20 1187563781</span>
+          </div>
+          <div class="flex items-center sm:justify-end gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400 print:text-slate-700"></i>
+            <span>Cairo, Egypt</span>
+          </div>
+          <div class="flex items-center sm:justify-end gap-2">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-amber-400 print:text-slate-700"></i>
+            <span>Trilingual: English, French, Arabic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CV Body -->
+    <div class="p-8 space-y-8 print:p-6 print:space-y-6">
+
+      <!-- Executive Profile Summary -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-3">
+          Professional Profile
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 print:text-slate-700 leading-relaxed">
+          Ambitious Business Informatics and Data Analytics undergraduate at Université Française d’Égypte. Combines foundational technical competencies in quantitative analysis, business modeling, and information systems with proven practical experience in digital retail marketing, enterprise IT corporate internships, and large-scale event organization. Passionate about technology-driven business optimization, fintech ecosystems, and cross-functional leadership.
+        </p>
+      </div>
+
+      <!-- Education Timeline -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-4">
+          Education
+        </h2>
+        <div class="space-y-4">
+          
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Université Française d'Égypte (UFE)
+              </h3>
+              <span class="text-xs font-semibold text-amber-400 print:text-slate-700">2025 – Present</span>
+            </div>
+            <div class="text-xs font-medium text-slate-400 print:text-slate-600">
+              Bachelor in Business Informatics & Data Analytics (Bilingual French-Egyptian Program)
+            </div>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Coursework: Business Informatics, Decision Science, Data Structures, Applied Statistics, Microeconomics, and Enterprise Information Systems.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Utopia School
+              </h3>
+              <span class="text-xs font-semibold text-slate-400 print:text-slate-700">2023 – 2025</span>
+            </div>
+            <div class="text-xs font-medium text-slate-400 print:text-slate-600">
+              American High School Diploma (Honors)
+            </div>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Graduation Committee Leader, honors in mathematics and social sciences, active event coordinator.
+            </p>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Retaj Language School
+              </h3>
+              <span class="text-xs font-semibold text-slate-400 print:text-slate-700">2018 – 2023</span>
+            </div>
+            <div class="text-xs font-medium text-slate-400 print:text-slate-600">
+              Preparatory & Secondary Language Education
+            </div>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Top-tier class ranking, Spelling Bee recognition, official school appreciation awards.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Professional & Leadership Experience -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-4">
+          Professional Experience
+        </h2>
+        <div class="space-y-4">
+          
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Corporate IT Intern — Petrobel (Belayim Petroleum Co.)
+              </h3>
+              <span class="text-xs text-amber-400 print:text-slate-700">Corporate Internship</span>
+            </div>
+            <ul class="list-disc list-inside text-xs text-slate-300 print:text-slate-700 mt-1 space-y-1">
+              <li>Completed intensive corporate IT department practicum at one of Egypt's prominent energy ventures.</li>
+              <li>Gained hands-on exposure to enterprise ERP systems, database architectures, and network protocols.</li>
+              <li>Observed internal helpdesk ticket resolution and corporate data confidentiality compliance.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Online Sales Specialist — Glamisky Jewelry & More
+              </h3>
+              <span class="text-xs text-amber-400 print:text-slate-700">E-Commerce & Digital Marketing</span>
+            </div>
+            <ul class="list-disc list-inside text-xs text-slate-300 print:text-slate-700 mt-1 space-y-1">
+              <li>Managed social media commercial campaigns and engagement across Instagram, Facebook, and TikTok.</li>
+              <li>Maintained direct omnichannel client communications, closing sales inquiries and managing order placement.</li>
+              <li>Improved customer retention through proactive dispute resolution and timely post-purchase follow-up.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline">
+              <h3 class="text-sm font-bold text-amber-200 print:text-slate-900 font-['Cinzel']">
+                Event Organizer & University Usher — High School & University Events
+              </h3>
+              <span class="text-xs text-amber-400 print:text-slate-700">2 Consecutive Years</span>
+            </div>
+            <ul class="list-disc list-inside text-xs text-slate-300 print:text-slate-700 mt-1 space-y-1">
+              <li>Organized high school graduation ceremonies for two years; managed stage flow and seating arrangements.</li>
+              <li>Served as an official student usher representing Université Française d’Égypte during VIP ceremonies.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Key Academic & Strategic Projects -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-4">
+          Featured Academic & Business Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 print:border-slate-300">
+            <h4 class="text-xs font-bold text-amber-300 print:text-slate-900">Skill Up App (Peer-to-Peer Barter Platform)</h4>
+            <p class="text-[11px] text-slate-400 print:text-slate-600 mt-0.5">Role: Concept Designer & Business Strategist</p>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Architected a non-monetary skill exchange platform enabling Egyptian students to trade tutoring skills via time-credit banking.
+            </p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 print:border-slate-300">
+            <h4 class="text-xs font-bold text-amber-300 print:text-slate-900">Fawry Digital Finance & Inclusion Study</h4>
+            <p class="text-[11px] text-slate-400 print:text-slate-600 mt-0.5">Role: Lead Financial Analyst & Researcher</p>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Analyzed Fawry's multi-sided network effect, merchant POS infrastructure, and alignment with Central Bank financial inclusion goals.
+            </p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 print:border-slate-300">
+            <h4 class="text-xs font-bold text-amber-300 print:text-slate-900">Suez Canal Cities Economic & Cultural Research</h4>
+            <p class="text-[11px] text-slate-400 print:text-slate-600 mt-0.5">Role: Research Lead, Geography & Demographics</p>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Investigated the five pillars of Suez: introduction, geography, demographic census shifts, canal economic throughput, and climate.
+            </p>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-950/60 border border-slate-800 print:border-slate-300">
+            <h4 class="text-xs font-bold text-amber-300 print:text-slate-900">Ankh Pass (Tourism Mobile App & Safety)</h4>
+            <p class="text-[11px] text-slate-400 print:text-slate-600 mt-0.5">Role: Co-Lead Product Architect & UX Researcher</p>
+            <p class="text-xs text-slate-300 print:text-slate-700 mt-1">
+              Designed a 2-person mobile digital pass offering QR ticketing, crowd scheduling, and emergency GPS safety assistance for tourists.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Core Skills & Competencies -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-3">
+          Core Competencies & Tools
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300 print:text-slate-700">
+          <div>
+            <strong class="text-amber-200 print:text-slate-900 block mb-1">Analytical & Tech</strong>
+            Data Analytics, Business Informatics, Statistical Analysis, IT Infrastructure, ERP Systems.
+          </div>
+          <div>
+            <strong class="text-amber-200 print:text-slate-900 block mb-1">Business & Strategy</strong>
+            Time Management, Team Leadership, Event Coordination, Organizational Design, Financial Ratio Analysis.
+          </div>
+          <div>
+            <strong class="text-amber-200 print:text-slate-900 block mb-1">Marketing & Languages</strong>
+            Digital Marketing (IG/FB/TikTok), Omnichannel Sales, English (Fluent), French (Academic), Arabic (Native).
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic References -->
+      <div>
+        <h2 class="text-xs font-bold uppercase font-['Cinzel'] tracking-widest text-amber-400 print:text-slate-900 border-b border-amber-500/20 print:border-slate-300 pb-1 mb-3">
+          Academic References
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300 print:text-slate-700">
+          <div class="p-3 rounded-lg bg-slate-950/40 border border-slate-800 print:border-slate-300">
+            <div class="font-bold text-amber-200 print:text-slate-900">Dr. Mariam Gawich</div>
+            <div class="text-slate-400 print:text-slate-600">Department Director</div>
+            <div>Université Française d’Égypte (UFE)</div>
+          </div>
+          <div class="p-3 rounded-lg bg-slate-950/40 border border-slate-800 print:border-slate-300">
+            <div class="font-bold text-amber-200 print:text-slate-900">Dr. Osama Hanafy</div>
+            <div class="text-slate-400 print:text-slate-600">Professor</div>
+            <div>Université Française d’Égypte (UFE)</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Print Footer -->
+    <div class="p-6 bg-slate-950 border-t border-slate-800 text-center text-xs text-slate-500 print:bg-white print:border-slate-300">
+      Sara Amr • E-Portfolio: <a href="index.html" class="text-amber-400 print:text-slate-800 hover:underline">Portfolio Web Experience</a> • Cairo, Egypt
+    </div>
+
+  </div>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
+
