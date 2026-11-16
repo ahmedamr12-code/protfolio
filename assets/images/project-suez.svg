@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="suezBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1A2E"/>
+      <stop offset="100%" stop-color="#040D18"/>
+    </linearGradient>
+    <linearGradient id="canalWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <linearGradient id="sandLand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#926227"/>
+      <stop offset="100%" stop-color="#5A3A12"/>
+    </linearGradient>
+    <linearGradient id="goldSuez" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="360" rx="16" fill="url(#suezBg)"/>
+
+  <!-- Top Badge -->
+  <rect x="180" y="25" width="240" height="30" rx="15" fill="#06101E" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="300" y="44" fill="#FDE68A" font-family="'Cinzel', serif" font-size="11" font-weight="bold" letter-spacing="2" text-anchor="middle">SUEZ CANAL RESEARCH</text>
+
+  <!-- Canal Waterway Diagonal -->
+  <path d="M 0 160 Q 200 210 400 150 T 600 200 L 600 290 Q 400 240 200 300 T 0 250 Z" fill="url(#canalWater)" opacity="0.85"/>
+
+  <!-- Cargo Ship Silhouette -->
+  <g transform="translate(240, 150)">
+    <!-- Hull -->
+    <path d="M 10 35 L 30 55 L 140 55 L 160 35 Z" fill="#E2E8F0"/>
+    <path d="M 15 37 L 32 52 L 138 52 L 155 37 Z" fill="#0F172A"/>
+    <!-- Superstructure / Bridge -->
+    <rect x="115" y="10" width="30" height="25" fill="#E2E8F0" rx="2"/>
+    <rect x="120" y="15" width="20" height="5" fill="#0284C7"/>
+    <line x1="130" y1="5" x2="130" y2="10" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Cargo Containers -->
+    <rect x="35" y="22" width="22" height="13" fill="#D4AF37" rx="1"/>
+    <rect x="60" y="22" width="22" height="13" fill="#0284C7" rx="1"/>
+    <rect x="85" y="22" width="22" height="13" fill="#EF4444" rx="1"/>
+    <rect x="45" y="9" width="22" height="13" fill="#10B981" rx="1"/>
+    <rect x="70" y="9" width="22" height="13" fill="#F59E0B" rx="1"/>
+  </g>
+
+  <!-- Metric Badges Left & Right -->
+  <rect x="50" y="80" width="150" height="60" rx="10" fill="#0F2038" stroke="#D4AF37" stroke-width="1.2"/>
+  <text x="65" y="105" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">GLOBAL MARITIME TRADE</text>
+  <text x="65" y="127" fill="#FDE68A" font-family="'Cinzel', serif" font-size="18" font-weight="bold">12%</text>
+
+  <rect x="400" y="80" width="150" height="60" rx="10" fill="#0F2038" stroke="#D4AF37" stroke-width="1.2"/>
+  <text x="415" y="105" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">SUEZ METRIC ANALYZED</text>
+  <text x="415" y="127" fill="#FDE68A" font-family="'Cinzel', serif" font-size="16" font-weight="bold">5 CORE DOMAINS</text>
+
+  <!-- Bottom Research Pillars -->
+  <g transform="translate(60, 310)">
+    <text x="0" y="0" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Geography • Demographics • Climate • Economy • Historical Legacy</text>
+  </g>
+</svg>

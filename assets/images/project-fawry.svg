@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="fawryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091428"/>
+      <stop offset="100%" stop-color="#040914"/>
+    </linearGradient>
+    <linearGradient id="fawryYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#E5A600"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#007799"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="360" rx="16" fill="url(#fawryBg)"/>
+
+  <!-- Glowing Fintech Waves -->
+  <path d="M 0 280 C 150 200 300 320 600 220 L 600 360 L 0 360 Z" fill="#0E2142" opacity="0.6"/>
+  <path d="M 0 300 C 180 240 320 340 600 260 L 600 360 L 0 360 Z" fill="#142C57" opacity="0.5"/>
+
+  <!-- Left Side: Digital Payment Card -->
+  <rect x="70" y="90" width="220" height="135" rx="12" fill="#162A4E" stroke="#FFDD00" stroke-width="1.8"/>
+  <!-- Card EMV Chip -->
+  <rect x="95" y="115" width="34" height="26" rx="4" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <line x1="95" y1="128" x2="129" y2="128" stroke="#B8860B" stroke-width="1"/>
+  <line x1="112" y1="115" x2="112" y2="141" stroke="#B8860B" stroke-width="1"/>
+  <!-- Card Contactless Icon -->
+  <path d="M 250 118 C 255 124 255 132 250 138 M 256 114 C 263 123 263 137 256 146" stroke="#FFDD00" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- Card Text -->
+  <text x="95" y="180" fill="#E2E8F0" font-family="monospace" font-size="12" letter-spacing="3">•••• 4821</text>
+  <text x="95" y="205" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">FAWRY DIGITAL PAY</text>
+
+  <!-- Right Side: Analytics Bar Chart & Inclusion Growth -->
+  <rect x="320" y="70" width="220" height="190" rx="12" fill="#0F1F38" stroke="#253E6B" stroke-width="1.5"/>
+  <text x="340" y="100" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="bold">FINANCIAL INCLUSION</text>
+  <text x="340" y="118" fill="#FFDD00" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">+68% UNBANKED POPULATION REACH</text>
+
+  <!-- Bars -->
+  <rect x="345" y="195" width="24" height="40" rx="4" fill="#253E6B"/>
+  <rect x="380" y="170" width="24" height="65" rx="4" fill="#355896"/>
+  <rect x="415" y="150" width="24" height="85" rx="4" fill="#00E5FF"/>
+  <rect x="450" y="130" width="24" height="105" rx="4" fill="#E5A600"/>
+  <rect x="485" y="110" width="24" height="125" rx="4" fill="url(#fawryYellow)"/>
+
+  <!-- Growth Line & Arrow -->
+  <path d="M 355 190 Q 420 150 495 105" stroke="#FFF" stroke-width="2.5" stroke-dasharray="3 3" fill="none"/>
+  <circle cx="497" cy="103" r="4" fill="#FFDD00"/>
+
+  <!-- Top Badge -->
+  <rect x="190" y="25" width="220" height="30" rx="15" fill="#0B1526" stroke="#FFDD00" stroke-width="1.5"/>
+  <text x="300" y="44" fill="#FFDD00" font-family="'Cinzel', serif" font-size="11" font-weight="bold" letter-spacing="2" text-anchor="middle">FAWRY FINTECH STUDY</text>
+</svg>

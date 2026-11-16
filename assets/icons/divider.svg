@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 40" fill="none">
+  <defs>
+    <linearGradient id="divGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#D4AF37" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FDE68A"/>
+      <stop offset="65%" stop-color="#D4AF37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Horizontal Line -->
+  <line x1="20" y1="20" x2="260" y2="20" stroke="url(#divGold)" stroke-width="1.5"/>
+  <line x1="340" y1="20" x2="580" y2="20" stroke="url(#divGold)" stroke-width="1.5"/>
+  
+  <!-- Diamonds along the line -->
+  <rect x="230" y="18" width="4" height="4" transform="rotate(45 232 20)" fill="#D4AF37"/>
+  <rect x="366" y="18" width="4" height="4" transform="rotate(45 368 20)" fill="#D4AF37"/>
+  
+  <!-- Center Emblem (Stylized Ankh / Sun) -->
+  <circle cx="300" cy="20" r="14" stroke="#D4AF37" stroke-width="1.5" fill="#0B132B"/>
+  <circle cx="300" cy="20" r="8" fill="none" stroke="#FDE68A" stroke-width="1"/>
+  <circle cx="300" cy="20" r="3.5" fill="#D4AF37"/>
+  <!-- Winged Rays -->
+  <path d="M 278 20 L 268 16 L 270 20 L 268 24 Z" fill="#D4AF37"/>
+  <path d="M 322 20 L 332 16 L 330 20 L 332 24 Z" fill="#D4AF37"/>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <linearGradient id="orgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1933"/>
+      <stop offset="100%" stop-color="#050B17"/>
+    </linearGradient>
+    <linearGradient id="goldOrg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="360" rx="16" fill="url(#orgBg)"/>
+
+  <!-- Top Badge -->
+  <rect x="170" y="20" width="260" height="30" rx="15" fill="#0A1224" stroke="#D4AF37" stroke-width="1.5"/>
+  <text x="300" y="39" fill="#FDE68A" font-family="'Cinzel', serif" font-size="11" font-weight="bold" letter-spacing="2" text-anchor="middle">ORGANIZATIONAL BEHAVIOR</text>
+
+  <!-- Org Hierarchy Diagram -->
+  <!-- Executive Level -->
+  <rect x="220" y="75" width="160" height="45" rx="8" fill="#182A4D" stroke="#3D5B94" stroke-width="1.5"/>
+  <text x="300" y="96" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Executive Leadership</text>
+  <text x="300" y="110" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Brand Governance & Strategy</text>
+
+  <!-- Connector Lines -->
+  <line x1="300" y1="120" x2="300" y2="145" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="120" y1="145" x2="480" y2="145" stroke="#D4AF37" stroke-width="2"/>
+  
+  <line x1="120" y1="145" x2="120" y2="170" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="240" y1="145" x2="240" y2="170" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="360" y1="145" x2="360" y2="170" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="480" y1="145" x2="480" y2="170" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Dept 1: Operations -->
+  <rect x="65" y="170" width="110" height="60" rx="6" fill="#132342" stroke="#2B4373" stroke-width="1"/>
+  <text x="120" y="196" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Operations</text>
+  <text x="120" y="214" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Supply & Fulfillment</text>
+
+  <!-- Dept 2: Marketing (Sara's Role highlighted in Gold!) -->
+  <rect x="185" y="170" width="110" height="70" rx="8" fill="#1A2D54" stroke="url(#goldOrg)" stroke-width="2.5"/>
+  <rect x="195" y="162" width="90" height="16" rx="4" fill="#D4AF37"/>
+  <text x="240" y="173" fill="#0B132B" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="bold" text-anchor="middle">SARA'S ROLE</text>
+  <text x="240" y="202" fill="#FDE68A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Marketing</text>
+  <text x="240" y="222" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Head of Marketing</text>
+
+  <!-- Dept 3: Finance -->
+  <rect x="305" y="170" width="110" height="60" rx="6" fill="#132342" stroke="#2B4373" stroke-width="1"/>
+  <text x="360" y="196" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Finance</text>
+  <text x="360" y="214" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Capital & Budgeting</text>
+
+  <!-- Dept 4: HR & Culture -->
+  <rect x="425" y="170" width="110" height="60" rx="6" fill="#132342" stroke="#2B4373" stroke-width="1"/>
+  <text x="480" y="196" fill="#CBD5E1" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="middle">People & HR</text>
+  <text x="480" y="214" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">Culture & Talent</text>
+
+  <!-- Bottom Insights Box -->
+  <rect x="65" y="270" width="470" height="60" rx="10" fill="#0D1A30" stroke="#D4AF37" stroke-width="1"/>
+  <text x="85" y="295" fill="#FDE68A" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="bold">Core Contribution: Cross-Departmental Synchronization</text>
+  <text x="85" y="315" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Engineered the market positioning, buyer personas, and internal communication flow for the 5-member team study.</text>
+</svg>

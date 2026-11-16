@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <radialGradient id="avatarBg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </radialGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F5D0B5"/>
+      <stop offset="100%" stop-color="#E2A77E"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D1E18"/>
+      <stop offset="100%" stop-color="#140E0B"/>
+    </linearGradient>
+    <linearGradient id="blazerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2744"/>
+      <stop offset="100%" stop-color="#0D162B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <circle cx="200" cy="200" r="190" fill="url(#avatarBg)"/>
+  
+  <!-- Subtle Pharaonic Geometric Halo Pattern -->
+  <circle cx="200" cy="200" r="175" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.4"/>
+  <circle cx="200" cy="200" r="160" stroke="#D4AF37" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- Hair Behind -->
+  <path d="M 120 180 C 110 240 115 310 135 340 C 150 290 145 220 150 180 Z" fill="url(#hairGrad)"/>
+  <path d="M 280 180 C 290 240 285 310 265 340 C 250 290 255 220 250 180 Z" fill="url(#hairGrad)"/>
+  
+  <!-- Neck -->
+  <path d="M 180 200 L 180 250 C 180 258 190 265 200 265 C 210 265 220 258 220 250 L 220 200 Z" fill="url(#skinTone)"/>
+  <!-- Gold Necklace / Cartouche Collar -->
+  <path d="M 178 246 C 190 256 210 256 222 246" stroke="url(#goldBorder)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="200" cy="254" r="3" fill="#D4AF37"/>
+
+  <!-- Suit / Blazer -->
+  <path d="M 120 370 C 120 310 150 260 200 260 C 250 260 280 310 280 370 Z" fill="url(#blazerGrad)"/>
+  <!-- Inner Blouse (Cream) -->
+  <path d="M 180 260 L 200 310 L 220 260 Z" fill="#FDF8F0"/>
+  <!-- Lapels -->
+  <path d="M 160 270 L 195 330 L 180 370 L 140 370 Z" fill="#152038" stroke="url(#goldBorder)" stroke-width="1" opacity="0.8"/>
+  <path d="M 240 270 L 205 330 L 220 370 L 260 370 Z" fill="#152038" stroke="url(#goldBorder)" stroke-width="1" opacity="0.8"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="200" cy="180" rx="46" ry="54" fill="url(#skinTone)"/>
+  
+  <!-- Hair Front / Style -->
+  <path d="M 148 170 C 145 125 170 115 200 115 C 235 115 255 128 252 170 C 240 145 225 140 200 142 C 175 140 160 148 148 170 Z" fill="url(#hairGrad)"/>
+  <path d="M 152 150 C 140 180 140 220 148 250 C 152 230 154 185 160 165 Z" fill="url(#hairGrad)"/>
+  <path d="M 248 150 C 260 180 260 220 252 250 C 248 230 246 185 240 165 Z" fill="url(#hairGrad)"/>
+
+  <!-- Eyes & Eyebrows (Pharaonic elegant sweep) -->
+  <path d="M 172 165 C 178 162 188 163 192 167" stroke="#2D1E18" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 208 167 C 212 163 222 162 228 165" stroke="#2D1E18" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <ellipse cx="182" cy="175" rx="5" ry="4" fill="#24140E"/>
+  <ellipse cx="218" cy="175" rx="5" ry="4" fill="#24140E"/>
+  <circle cx="183.5" cy="173.5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="219.5" cy="173.5" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Nose & Smile -->
+  <path d="M 200 176 L 198 188 L 203 190" stroke="#C98B64" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M 190 204 C 196 210 204 210 210 204" stroke="#B85D5D" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Modern Glasses (Intellectual / Data Analytics vibe) -->
+  <rect x="168" y="167" width="26" height="18" rx="5" fill="none" stroke="url(#goldBorder)" stroke-width="2"/>
+  <rect x="206" y="167" width="26" height="18" rx="5" fill="none" stroke="url(#goldBorder)" stroke-width="2"/>
+  <path d="M 194 174 L 206 174" stroke="url(#goldBorder)" stroke-width="2"/>
+
+  <!-- Outer Ring with Pharaonic Accents -->
+  <circle cx="200" cy="200" r="190" stroke="url(#goldBorder)" stroke-width="3.5" fill="none"/>
+  
+  <!-- Top & Bottom Golden Pips -->
+  <polygon points="200,3 205,12 195,12" fill="#D4AF37"/>
+  <polygon points="200,397 205,388 195,388" fill="#D4AF37"/>
+  <polygon points="3,200 12,205 12,195" fill="#D4AF37"/>
+  <polygon points="397,200 388,205 388,195" fill="#D4AF37"/>
+</svg>
